@@ -31,4 +31,19 @@ class MainQuizScreen : AppCompatActivity() {
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
+
+    fun createPersons() {
+        createJavaPersons()
+        createKotlinPersons()
+    }
+
+    private fun createKotlinPersons() {
+        var person2 = PersonK("Ingrid", "Vasendusche", 70)
+        println(person2.toString())
+    }
+
+    private fun createJavaPersons() {
+        var person1 = PersonJ("Hugo", "Dachdecker", 20)
+        println(person1.toString())
+    }
 }
