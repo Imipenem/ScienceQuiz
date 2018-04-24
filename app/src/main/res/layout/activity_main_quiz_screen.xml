@@ -8,7 +8,6 @@
     tools:context=".MainQuizScreen"
 
 
-
     >
 
     <Button
@@ -22,7 +21,6 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:background="#f1ff33"
-        android:text="Insert Answer B"
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +38,6 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:background="#f1ff33"
-        android:text="Insert Answer A"
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/answer_B"
@@ -58,7 +55,6 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="200dp"
         android:background="#f1ff33"
-        android:text="Insert Answer D"
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,7 +71,6 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:background="#f1ff33"
-        android:text="Insert Answer C"
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Answer_D"
@@ -91,7 +86,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Total Points:"
+        android:text="@string/total_points"
         android:textColor="@android:color/black"
         app:fontFamily="@font/almendra_italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,7 +103,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Placeholder"
+        android:text=""
         android:textAllCaps="false"
         android:textSize="18sp"
         android:textStyle="normal|bold"

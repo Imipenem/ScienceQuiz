@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">ScienceQuiz</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="Button_1">Button 1</string>
+    <string name="Button_2">Button 2</string>
+    <string name="Button_3">Button 3</string>
+    <string name="Button_4">Button 4</string>
+    <string name="TextView_1">Quiz App</string>
+    <string name="total_points">Total Points:</string>
 </resources>
