@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.widget.Toast
 
-private var DATABASE_VERSION = 1
+private val DATABASE_VERSION = 1
 private val DATABASE_NAME = "Question DB"
 private val TABLE_NAME = "Questions"
 private val COLUMN_QUESTION = "Question"
