@@ -3,4 +3,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="score">Score</string>
+    <string name="answer_one">Answer One</string>
+    <string name="answer_two">Answer Two</string>
+    <string name="answer_three">Answer Three</string>
+    <string name="answer_four">Answer Four</string>
+    <string name="total_points">Total points</string>/>
 </resources>
