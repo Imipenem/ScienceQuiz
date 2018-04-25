@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back2"
+    android:background="@drawable/back4"
     tools:context=".MainQuizScreen"
 
 
@@ -88,7 +88,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/total_points"
         android:textColor="@android:color/black"
-        app:fontFamily="@font/almendra_italic"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
