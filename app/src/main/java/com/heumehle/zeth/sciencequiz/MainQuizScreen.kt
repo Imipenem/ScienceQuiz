@@ -10,15 +10,15 @@ class MainQuizScreen : AppCompatActivity() {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                message.setText(R.string.title_home)
+                score.setText(R.string.title_home)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_dashboard -> {
-                message.setText(R.string.title_dashboard)
+                score.setText(R.string.title_dashboard)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_notifications -> {
-                message.setText(R.string.title_notifications)
+                score.setText(R.string.title_notifications)
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -32,18 +32,4 @@ class MainQuizScreen : AppCompatActivity() {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
 
-    fun createPersons() {
-        createJavaPersons()
-        createKotlinPersons()
-    }
-
-    private fun createKotlinPersons() {
-        var person2 = PersonK("Ingrid", "Vasendusche", 70)
-        println(person2.toString())
-    }
-
-    private fun createJavaPersons() {
-        var person1 = PersonJ("Hugo", "Dachdecker", 20)
-        println(person1.toString())
-    }
 }
