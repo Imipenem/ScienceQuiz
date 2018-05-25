@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">DruidTest</string>
     <string name="total_points">Total Points</string>
+    <string name="rightAnswer">A sign which indicates that the answer was right</string>
 </resources>
