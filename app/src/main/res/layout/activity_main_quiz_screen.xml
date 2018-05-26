@@ -8,18 +8,6 @@
     tools:context=".MainQuizScreen"
     tools:layout_editor_absoluteY="81dp">
 
-<<<<<<< HEAD
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/navigation" />
-=======
 
     <Button
         android:id="@+id/answer_B"
@@ -105,101 +93,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
->>>>>>> testBranch
-
-    <Button
-        android:id="@+id/answer_A"
-        style="@android:style/Widget.Button"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="140dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:background="@android:color/darker_gray"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/answer_B"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/answer_B"
-        style="@android:style/Widget.Button"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:background="@android:color/darker_gray"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="307dp" />
-
-    <Button
-        android:id="@+id/Answer_C"
-        style="@android:style/Widget.Button"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="60dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:background="@android:color/darker_gray"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Answer_D"
-        app:layout_constraintHorizontal_bias="0.397"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/Answer_D"
-        style="@android:style/Widget.Button"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="60dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="200dp"
-        android:background="@android:color/darker_gray"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/score"
-        android:layout_width="111dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/total_points"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        app:fontFamily="@font/almendra_italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/question"
-        android:layout_width="260dp"
-        android:layout_height="157dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/darker_gray"
-        android:text=""
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        app:fontFamily="casual"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/score"
-        app:layout_constraintVertical_bias="0.211" />
 
 
 </android.support.constraint.ConstraintLayout>
