@@ -1,4 +1,5 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">ScienceQuiz</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -9,4 +10,9 @@
     <string name="answer_three">Answer Three</string>
     <string name="answer_four">Answer Four</string>
     <string name="total_points">Total points</string>/>
+=======
+    <string name="app_name">DruidTest</string>
+    <string name="total_points">Total Points</string>
+    <string name="rightAnswer">A sign which indicates that the answer was right</string>
+>>>>>>> testBranch
 </resources>

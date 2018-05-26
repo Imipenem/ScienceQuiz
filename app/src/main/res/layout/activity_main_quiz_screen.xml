@@ -4,8 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainQuizScreen">
+    android:background="@drawable/back4"
+    tools:context=".MainQuizScreen"
+    tools:layout_editor_absoluteY="81dp">
 
+<<<<<<< HEAD
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="0dp"
@@ -16,6 +19,94 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/navigation" />
+=======
+
+    <Button
+        android:id="@+id/answer_B"
+        style="@android:style/Widget.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:background="#f1ff33"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBaseline_toBaselineOf="@+id/answer_A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answer_A" />
+
+    <Button
+        android:id="@+id/answer_A"
+        style="@android:style/Widget.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginStart="46dp"
+        android:background="#f1ff33"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toTopOf="@+id/Answer_C"
+        app:layout_constraintEnd_toStartOf="@+id/answer_B"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Answer_D"
+        style="@android:style/Widget.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:background="#f1ff33"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Answer_C" />
+
+    <Button
+        android:id="@+id/Answer_C"
+        style="@android:style/Widget.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginStart="46dp"
+        android:background="#f1ff33"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Answer_D"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/allPoints"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/total_points"
+
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="207dp"
+        android:layout_height="107dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+>>>>>>> testBranch
 
     <Button
         android:id="@+id/answer_A"
