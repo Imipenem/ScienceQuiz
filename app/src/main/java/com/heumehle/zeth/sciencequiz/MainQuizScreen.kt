@@ -15,12 +15,12 @@ class MainQuizScreen : AppCompatActivity() {
 
     private var totalPoints: Int = 0
 
-    internal var TextField: TextView
-    internal var PointsField: TextView
-    internal var A_Button: Button
-    internal var B_Button: Button
-    internal var C_Button: Button
-    internal var D_Button: Button
+    private var TextField: TextView = findViewById(R.id.textView2)
+    private var PointsField: TextView = findViewById(R.id.allPoints)
+    private var A_Button: Button = findViewById(R.id.answer_A)
+    private var B_Button: Button = findViewById(R.id.answer_B)
+    private var C_Button: Button = findViewById(R.id.Answer_C)
+    private var D_Button: Button = findViewById(R.id.Answer_D)
 
     internal var dummyQuestion1 = Question("Korrekt", "Frage", "Falsch1", "Falsch2", "Falsch3")
     internal var dummyQuestion2 = Question("2", "Was is 1 + 1?", "3", "4", "5")
@@ -30,7 +30,7 @@ class MainQuizScreen : AppCompatActivity() {
 
 
     internal var dummyQuestionHolder = arrayOf(dummyQuestion1, dummyQuestion2, dummyQuestion3, dummyQuestion4, dummyQuestion5)
-    internal var dummyQuestion: Question
+    internal var dummyQuestion = getDummyQuestion()
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
@@ -61,17 +61,17 @@ class MainQuizScreen : AppCompatActivity() {
 
     fun createQuestionScreen() {
 
-        dummyQuestion = getDummyQuestion()
-        TextField = findViewById(R.id.textView2)
+        //dummyQuestion = getDummyQuestion()
+        //TextField = findViewById(R.id.textView2)
         TextField.text = dummyQuestion.m_question
-        PointsField = findViewById(R.id.allPoints)
+        //PointsField = findViewById(R.id.allPoints)
         PointsField.text = String.format("Total Points: %s", totalPoints.toString())
 
 
-        A_Button = findViewById(R.id.answer_A)
-        B_Button = findViewById(R.id.answer_B)
-        C_Button = findViewById(R.id.Answer_C)
-        D_Button = findViewById(R.id.Answer_D)
+        //A_Button = findViewById(R.id.answer_A)
+        //B_Button = findViewById(R.id.answer_B)
+        //C_Button = findViewById(R.id.Answer_C)
+        //D_Button = findViewById(R.id.Answer_D)
 
 
         val rand = (Math.random() * 4 + 1).toInt()
