@@ -4,10 +4,10 @@ import android.graphics.Color
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.content.Intent
+import android.os.Handler
 import kotlinx.android.synthetic.main.activity_main_quiz_screen.*
 
 
@@ -59,20 +59,122 @@ class MainQuizScreen : AppCompatActivity() {
         createQuestionScreen();
     }
 
+    /**
+     * This method handles clickOn Button events
+     */
+
+    fun handleButtonEvents() {
+
+        A_Button.setOnClickListener { v ->
+            if (A_Button.text == dummyQuestion.m_correctAnswer) {
+                A_Button.setBackgroundColor(Color.GREEN)
+                totalPoints++
+                PointsField.text = String.format("Total Points: %s", totalPoints.toString())
+                val myIntent = Intent(v.context, CorrectQuestionScreen::class.java)
+                startActivity(myIntent)
+
+                Handler().postDelayed({
+                    createQuestionScreen()
+                    A_Button.setBackgroundColor(Color.parseColor("#f1ff33"))
+                }, 3000)
+            } else {
+                A_Button.setBackgroundColor(Color.RED)
+                Handler().postDelayed({
+                    createQuestionScreen()
+                    A_Button.setBackgroundColor(Color.parseColor("#f1ff33"))
+                }, 3000)
+            }
+            /**
+             * Only here for later refactoring
+             */
+            //Intent myIntent = new Intent(v.getContext(),MainActivity.class);
+            //startActivity(myIntent);}
+        }
+
+        B_Button.setOnClickListener { v ->
+            if (B_Button.text == dummyQuestion.m_correctAnswer) {
+                B_Button.setBackgroundColor(Color.GREEN)
+                totalPoints++
+                PointsField.text = String.format("Total Points: %s", totalPoints.toString())
+                val myIntent = Intent(v.context, CorrectQuestionScreen::class.java)
+                startActivity(myIntent)
+
+                Handler().postDelayed({
+                    createQuestionScreen()
+                    B_Button.setBackgroundColor(Color.parseColor("#f1ff33"))
+                }, 3000)
+            } else {
+                B_Button.setBackgroundColor(Color.RED)
+                Handler().postDelayed({
+                    createQuestionScreen()
+                    B_Button.setBackgroundColor(Color.parseColor("#f1ff33"))
+                }, 3000)
+            }
+        }
+
+        C_Button.setOnClickListener { v ->
+            if (C_Button.text == dummyQuestion.m_correctAnswer) {
+                C_Button.setBackgroundColor(Color.GREEN)
+                totalPoints++
+                PointsField.text = String.format("Total Points: %s", totalPoints.toString())
+                val myIntent = Intent(v.context, CorrectQuestionScreen::class.java)
+                startActivity(myIntent)
+
+                Handler().postDelayed({
+                    createQuestionScreen()
+                    C_Button.setBackgroundColor(Color.parseColor("#f1ff33"))
+                }, 3000)
+            } else {
+                C_Button.setBackgroundColor(Color.RED)
+                Handler().postDelayed({
+                    createQuestionScreen()
+                    C_Button.setBackgroundColor(Color.parseColor("#f1ff33"))
+                }, 3000)
+            }
+        }
+
+        D_Button.setOnClickListener { v ->
+            if (D_Button.text == dummyQuestion.m_correctAnswer) {
+                D_Button.setBackgroundColor(Color.GREEN)
+                totalPoints++
+                PointsField.text = String.format("Total Points: %s", totalPoints.toString())
+                val myIntent = Intent(v.context, CorrectQuestionScreen::class.java)
+                startActivity(myIntent)
+
+                Handler().postDelayed({
+                    createQuestionScreen()
+                    D_Button.setBackgroundColor(Color.parseColor("#f1ff33"))
+                }, 3000)
+            } else {
+                D_Button.setBackgroundColor(Color.RED)
+                Handler().postDelayed({
+                    createQuestionScreen()
+                    D_Button.setBackgroundColor(Color.parseColor("#f1ff33"))
+                }, 3000)
+            }
+        }
+    }
+
+    /**
+     * Everytime this method is called, it creates a new question screen
+     */
+
     fun createQuestionScreen() {
 
-        //dummyQuestion = getDummyQuestion()
-        //TextField = findViewById(R.id.textView2)
+        dummyQuestion = getDummyQuestion()
+        TextField = findViewById(R.id.textView2)
         TextField.text = dummyQuestion.m_question
-        //PointsField = findViewById(R.id.allPoints)
+        PointsField = findViewById(R.id.allPoints)
         PointsField.text = String.format("Total Points: %s", totalPoints.toString())
 
 
-        //A_Button = findViewById(R.id.answer_A)
-        //B_Button = findViewById(R.id.answer_B)
-        //C_Button = findViewById(R.id.Answer_C)
-        //D_Button = findViewById(R.id.Answer_D)
+        A_Button = findViewById(R.id.answer_A)
+        B_Button = findViewById(R.id.answer_B)
+        C_Button = findViewById(R.id.Answer_C)
+        D_Button = findViewById(R.id.Answer_D)
 
+        TextField.text = dummyQuestion.m_question
+        PointsField.text = String.format("Total Points: %s", totalPoints.toString())
 
         val rand = (Math.random() * 4 + 1).toInt()
 
@@ -104,62 +206,6 @@ class MainQuizScreen : AppCompatActivity() {
                 A_Button.text = dummyQuestion.m_false2
                 B_Button.text = dummyQuestion.m_false3
                 C_Button.text = dummyQuestion.m_false1
-            }
-        }
-
-        A_Button.setOnClickListener { v ->
-            if (A_Button.text == dummyQuestion.m_correctAnswer) {
-                A_Button.setBackgroundColor(Color.GREEN)
-                totalPoints++
-                PointsField.text = String.format("Total Points: %s", totalPoints.toString())
-                val myIntent = Intent(v.context, CorrectQuestionScreen::class.java)
-                startActivity(myIntent)
-            } else {
-                A_Button.setBackgroundColor(Color.RED)
-                val myIntent = Intent(v.context, MainQuizScreen::class.java)
-                startActivity(myIntent)
-            }
-        }
-
-        B_Button.setOnClickListener { v ->
-            if (B_Button.text == dummyQuestion.m_correctAnswer) {
-                B_Button.setBackgroundColor(Color.GREEN)
-                totalPoints++
-                PointsField.text = String.format("Total Points: %s", totalPoints.toString())
-                val myIntent = Intent(v.context, CorrectQuestionScreen::class.java)
-                startActivity(myIntent)
-            } else {
-                B_Button.setBackgroundColor(Color.RED)
-                val myIntent = Intent(v.context, MainQuizScreen::class.java)
-                startActivity(myIntent)
-            }
-        }
-
-        C_Button.setOnClickListener { v ->
-            if (C_Button.text == dummyQuestion.m_correctAnswer) {
-                C_Button.setBackgroundColor(Color.GREEN)
-                totalPoints++
-                PointsField.text = String.format("Total Points: %s", totalPoints.toString())
-                val myIntent = Intent(v.context, CorrectQuestionScreen::class.java)
-                startActivity(myIntent)
-            } else {
-                C_Button.setBackgroundColor(Color.RED)
-                val myIntent = Intent(v.context, MainQuizScreen::class.java)
-                startActivity(myIntent)
-            }
-        }
-
-        D_Button.setOnClickListener { v ->
-            if (D_Button.text == dummyQuestion.m_correctAnswer) {
-                D_Button.setBackgroundColor(Color.GREEN)
-                totalPoints++
-                PointsField.text = String.format("Total Points: %s", totalPoints.toString())
-                val myIntent = Intent(v.context, CorrectQuestionScreen::class.java)
-                startActivity(myIntent)
-            } else {
-                D_Button.setBackgroundColor(Color.RED)
-                val myIntent = Intent(v.context, MainQuizScreen::class.java)
-                startActivity(myIntent)
             }
         }
     }
